@@ -52,3 +52,20 @@ There is a [thread detailing how this method came about.](https://code.google.co
 ## Additional Resources
 
 Blog post and screencast showing how to get up and running and create your own theme as well http://s10wen.com/blog/2014/03/12/chrome-dev-tools-theming-with-zero-base-themes/
+
+## Additional info for windows user:
+
+http://stackoverflow.com/questions/23055651/disable-developer-mode-extensions-pop-up
+
+1) download Chrome group policy templates here: http://dl.google.com/dl/edgedl/chrome/policy/policy_templates.zip
+2) Copy [zip]\windows\chrome.admx to c:\windows\policydefinitions
+3) Copy [zip]\windows\[yourlanguage]\chrome.adml to c:\windows\policydefinitions\[yourlanguage]\chrome.adml (not c:\windows\[yourlanguage])
+4) In Chrome, go to Settings -> Extensions
+5) Check the Developer Mode checkbox at the top
+6) Scroll down the list of disabled extensions and note the ID's of the extensions you want to enable.  LogMeIn, for example, is ID: nmgnihglilniboicepgjclfiageofdfj
+7) Click Start -> Run, and type gpedit.msc
+8) Expand User Configuration -> Administrative Templates -> Google -> Google Chrome -> Extensions
+9) Double-click to open "Configure extension installation whitelist"
+10) Select "Enabled", then click "Show..."
+11) In the list, enter all the ID's for the extensions you noted in Step 6
+12) Click OK and restart Chrome.

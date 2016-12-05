@@ -46,8 +46,6 @@ As of Version v. **33.0.1726.0**, themes only work via extensions and the develo
 
 There is a [thread detailing how this method came about.](https://code.google.com/p/chromium/issues/detail?can=4&start=0&num=100&q=&colspec=ID%20Pri%20M%20Iteration%20ReleaseBlock%20Cr%20Status%20Owner%20Summary%20OS%20Modified&groupby=&sort=&id=318566).  Feel free to voice your opinions there.
 
-***
-
 ## Additional info for windows user:
 
 http://stackoverflow.com/questions/23055651/disable-developer-mode-extensions-pop-up
@@ -76,4 +74,4 @@ http://stackoverflow.com/questions/23055651/disable-developer-mode-extensions-po
 
 12. Click OK and restart Chrome.
 
-## -----------------------------
+***
